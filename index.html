@@ -3,186 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MY Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-      *{
-        margin: 0;
-        padding: 0;
-        
-        
-      }
-        .my-class{
-            text-align: justify;
-        }
-        .me3-photo {
-          background-image: url('./graph.png');
-          background-size: cover;
-          background-position: center;
-      }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
-<body data-bs-theme="dark">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body style=" background-color: #faedcd; z-index:1;">
+    <div >
+
+      <nav class="navbar navbar-expand-lg n">
         <div class="container-fluid">
           <a class="navbar-brand">Rashmiranjan Baral</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
+            <ul class="navbar-nav ms-auto list">
+              <li class="nav-item list">
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
-             
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#academic">Academics</a>
+                <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#skill">Skill</a>
+                <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#project">Project</a>
+                <a class="nav-link active" aria-current="page" href="#education">Academics</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact">Contact Me</a>
+                <a class="nav-link active" aria-current="page" href="#contact">contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <br>
-      <div id="home" class="container">
-        <div class="row">
-          <div class="col-md-6 text-center new-class "><br>
-            <img src="./me3.png" style="width:50%; position:relative; ; " class="me3-photo mx-auto" alt=""></div>
-          <div class="col-md-6 ps-5"><br><button type="button" class="btn btn-sm  rounded-0 mb-2" style="background-color: #ff9f1c;color:black" >Hi, I am</button>
-            <h1>Rashmiranjan Baral</h1>
-            <p> rashmibaral210@gmail.com</p>
-            <p style="text-align: justify;" class="me-5">I am a student in MCA and have passion for software development, I am eager to embark on a fulfilling career as a Software Engineer. During my academic journey, I honed my skills in Programming Languages, Tools, and Technologies gaining a solid foundation in  coding,web-application designing and problem-solving.</p>
+        <div class="horizontal-line"></div>
+       
+        <div class="container text-center"  id="home">
+            <div class="row ">
+                <p style="text-align: right;margin:0;" class="preFade fadeIn">
+                    <strong>✦ </strong>Status <i class="bi bi-arrow-right"></i><strong> Open to Work</strong>
+                </p>
+                <div class="horizontal"></div>
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col col-lg-6 col-md-6 my-auto mx-auto">
+                      <p style="font-size:3rem; " class="ms-1 my-auto mx-auto">Hello World,I'm Rashmi</p>
+                      <p class="ms-1 my-auto mx-auto" style="margin-bottom: 200px; font-size:2rem;">A <span id="element"></span></p>
+                    </div>
+                    <div class="col col-md-6 col-lg-6 mx-auto my-auto d-none d-sm-block ">
+                        <img src="./me.jpg" alt="" style="width: 100%; ">
+                  </div>
+                </div>
+              
+            </div>
           </div>
-        </div>
-      </div>
-      <br>
-      
-      <h1 id="academic" class="text-center mt-5 display-5">My Accademic Records</h1>
-      <div class="container text-start pt-3 lh-1 ">
-                <div class="row ">
-                  <div class="col-md-4 mt-3 " ><div class="card text-dark" style="background-color: #ff9f1c; ">
-                    <div class="card-body ">
-                        <h2>MCA</h2>
-                        <p><i class="bi bi-mortarboard"></i> Silicon Institute of Technology</p>
-                        <p><i class="bi bi-pencil"></i> 7.7(cgpa)</p>
-                        <p><i class="bi bi-calendar-check"></i> 2022 - 2024</p> </p>
-                    </div>
-                 </div></div>
-                  <div class="col-md-4 mt-3"><div class="card  text-dark"style="background-color: #ff9f1c; color:#fefae0;" >
-                    <div class="card-body" >
-                        <h2>BSc Mathematics</h2>
-                        <p><i class="bi bi-mortarboard"></i> Prananath autonomous college</p>
-                        <p><i class="bi bi-pencil"></i> 7.59(cgpa)</p>
-                        <p><i class="bi bi-calendar-check"></i> 2018-2021</p> </p>
-                    </div>
-                 </div></div>
-                  <div class="col-md-4 mt-3"><div class="card text-dark" style="background-color: #ff9f1c; color:#fefae0;">
-                    <div class="card-body">
-                        <h2>12TH</h2>
-                        <p><i class="bi bi-mortarboard"></i> Baba residential college</p>
-                        <p><i class="bi bi-pencil"></i> 69.5%</p>
-                        <p><i class="bi bi-calendar-check"></i> 2016-2018</p> </p>
-                    </div>
-                 </div></div>
-                  <div class="col-md-4 mt-3"><div class="card text-dark" style="background-color: #ff9f1c; color:#fefae0;" >
-                    <div class="card-body">
-                        <h2>10TH</h2>
-                        <p><i class="bi bi-mortarboard"></i> SD High School</p>
-                        <p><i class="bi bi-pencil"></i> 74.44%</p>
-                        <p><i class="bi bi-calendar-check"></i> 2014 - 2016</p> </p>
-                    </div>
-                 </div></div>
-                </div>
-              </div>
-              <h1 id="skill" class="mt-5 text-center display-5">Technical Skills</h1>
-              <div class="container mt-3">
-                <div class="row">
-                  <div class="col-md-6">
-                      <p class="mb-0">C</p>
-                      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 75%; background-color:#ff9f1c ">75%</div>
-                      </div>
-                      <p class="mb-0">Java</p>
-                      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 75%;background-color:#ff9f1c">75%</div>
-                      </div>
-                      <p class="mb-0">PHP</p>
-                      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 80%;background-color:#ff9f1c">80%</div>
+          <div class="horizontal"></div>
+          <section id="skills" class="container px-4 py-5 mt-3">
+            <h2 class=" text-start" style="margin-top: 150px;">Technical Skills</h2>
+            <div>
+            <div class="container text-center ">
+                <div class="row align-items-start">
+                    <div class="horizontal" style="margin-bottom: 80px;"></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+                    <div class="card pik border-0 " style="background: none;">
+                        <div  class="card-body pik rounded-circle mx-auto" style="border: 1px solid black; height:100px;width:100px ">
+                        <p></p>HTML
+                        </div>
                       </div>
                   </div>
-                  <div class="col-md-6">
-                    <p class="mb-0">HTML</p>
-                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 90%;background-color:#ff9f1c">90%</div>
-                      </div>
-                      <p class="mb-0">CSS</p>
-                      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 75%;background-color:#ff9f1c">75%</div>
-                      </div>
-                      <p class="mb-0">Bootstrap(5)</p>
-                      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 80%;background-color:#ff9f1c">80%</div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+                    <div class="card border-0" style="background: none;">
+                        <div class="card-body pik rounded-circle mx-auto" style="border: 1px solid black; height:100px;width:100px ">
+                        <p></p>css
+                        </div>
                       </div>
                   </div>
-                </div>
-              </div>
-            <h1 id="project" class="mt-5 text-center display-5 mb-5">My Projects</h1>
-            <div class="container text-center mt-5 ">
-              <div class="row">
-                <div class="col-md-6 mt-3">
-                  <div class="card mx-auto " style="width: 18rem;">
-                    <img src="./netflix.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">It's Netflix clone app devlop by using HTML, CSS, Bootstrap(5)</p>
-                    </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+                    <div class="card border-0" style="background: none;">
+                        <div class="card-body pik rounded-circle mx-auto" style="border: 1px solid black;height:100px;width:100px ">
+                        <p></p>php
+                        </div>
+                      </div>
                   </div>
-                </div>
-                <div class="col-md-6 mt-3">
-                  <div class="card mx-auto" style="width: 18rem;">
-                    <img src="./hm.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">It's Hotel Management project develop using Java based concept swing-awt</p>
-                    </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+                    <div class="card border-0" style="background: none;">
+                        <div class="card-body pik rounded-circle mx-auto " style="border: 1px solid black; height:100px;width:100px  ">
+                        <p></p>bootstrap
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+                    <div class="card border-0" style="background: none;">
+                        <div class="card-body pik rounded-circle mx-auto" style="border: 1px solid black; height:100px;width:100px  ">
+                        <p></p>java
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+                    <div class="card border-0" style="background: none;">
+                        <div class="card-body pik rounded-circle mx-auto " style="border: 1px solid black; height:100px;width:100px ">
+                        <p></p>JavaScript
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5 ">
+                    <div class="card border-0" style="background: none;">
+                        <div class="card-body pik rounded-circle mx-auto " style="border: 1px solid black; height:100px;width:100px ">
+                       <p></p> C
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5 ">
+                    <div class="card border-0" style="background: none;">
+                        <div class="card-body pik rounded-circle mx-auto " style="border: 1px solid black; height:100px;width:100px ">
+                       <p></p> Python
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
             </div>
-            <h1 class="text-center mt-5">Contact</h1>
+          </section>
+          <div class="horizontalf"></div>
+          <!-- Projects -->
+          <section id="projects" class="container px-4 py-5 mt-3">
+            <h2 class=" text-start" style="margin-top: 150px;">Projects</h2>
+                    <div class="row gy-4">
+                        <div class="horizontal" style="margin-bottom: 70px; "></div>
+                        <div style="display: flex; justify-content: space-between; ">
+                            <div class="card border-0" style="width: 7rem;background:none;">
+                            <img src="./song.png" class="card-img-top" alt="..." style="width:100%;padding-top:40px;">
+                            </div>
+                            <div style="padding-top: 50px; font-size:20px">
+                            Beatvibe
+                            </div>
+                            <div style="padding-top: 50px; font-size:20px">
+                              <a id="downloadLink" href="./song.png" download>Screenshot</a>
+                            </div>
+                        </div>
+                        <div class="horizontal" style="margin-top: 0;"></div>
+                        <div  style="display: flex; justify-content: space-between; ">
+                          <div class="card border-0" style="width: 7rem;background:none;">
+                            <img src="./netflix.webp" class="card-img-top" alt="..." style="width:100%; padding-top:30px;">
+                          </div>
+                          <div style="padding-top: 50px; font-size:20px; ">
+                          Netflix
+                          </div>
+                          <div style="padding-top: 50px; font-size:20px">
+                            <a id="downloadLink" href="./Screenshot 2024-01-04 004612.pdf" download>Screenshot</a>
+                          </div>
+                      </div>
+                      </div>
+                        <div class="horizontal" style="margin-bottom: 100px;"></div>
+                    </div>
+                </header>
+            </div>
+          </section>
+          <div class="horizontalf" style="margin-top: 150px;"></div>
+          <!-- education -->
+          <section id="education" class="resume section-bg">
+            <div class="container" data-aos="fade-up">
+              <header class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="horizontal" style="margin-bottom: 70px;"></div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 mb-5">
+                    <div class="card " style="background:none; border:1px solid ">
+                      <div class="card-body ">
+                          <h2>MCA</h2>
+                          <p><i class="bi bi-mortarboard"></i> Silicon Institute of Technology</p>
+                          <p><i class="bi bi-pencil"></i> 7.7(cgpa)</p>
+                          <p><i class="bi bi-calendar-check"></i> 2022 - 2024</p> </p>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 mb-5">
+                    <div class="card " style="background:none; border:1px solid ">
+                      <div class="card-body ">
+                        <h2>BSc Mathematics</h2>
+                        <p><i class="bi bi-mortarboard"></i> Prananath autonomous college</p>
+                        <p><i class="bi bi-pencil"></i> 7.59(cgpa)</p>
+                        <p><i class="bi bi-calendar-check"></i> 2018-2021</p> </p>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 mb-5">
+                    <div class="card " style="background:none; border:1px solid ">
+                      <div class="card-body ">
+                        <h2>12TH</h2>
+                        <p><i class="bi bi-mortarboard"></i> Baba residential college</p>
+                        <p><i class="bi bi-pencil"></i> 69.5%</p>
+                        <p><i class="bi bi-calendar-check"></i> 2016-2018</p> </p>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 mb-5">
+                    <div class="card " style="background:none; border:1px solid ">
+                      <div class="card-body ">
+                        <h2>10TH</h2>
+                        <p><i class="bi bi-mortarboard"></i> SD High School</p>
+                        <p><i class="bi bi-pencil"></i> 74.44%</p>
+                        <p><i class="bi bi-calendar-check"></i> 2014 - 2016</p> </p>
+                      </div>
+                   </div>
+                  </div>
+                </div>
+              </header>
+            </div>
+          </section>
+          <div class="horizontalf" style="margin-top: 100px;"></div>
+          <!-- contact -->
+          <section id="contact" class="contact">
             <div id="contact" class="container mt-5">
               <div class="row ">
+                <h2 class="section-title">Contact</h2>
+                <div class="horizontal" style="margin-bottom: 70px;"></div>
                   <div class="col-md-6 ">
-                    <div class="card mx-auto text-center float-md-end" style="width: 18rem; border: 1px solid #ff9f1c;  ">
+                    <div class="card mx-auto text-center float-md-end" style="width: 18rem; border: 1px solid #000; background: none; ">
                       <div class="card-header">
-                        Featured
+                        DETAILS
                       </div>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item"> <p><i class="bi bi-envelope"> rashmibaral210@gmail.com</i></p></li>
-                        <li class="list-group-item"> <p><i class="bi bi-phone"></i> +91 7735604064</p></li>
-                        <li class="list-group-item"><p><i class="bi bi-linkedin"></i> https://www.linkedin.com/in/rashmiranjan-baral-48a70a219/</p></li>
-                        <li class="list-group-item">  <p><i class="bi bi-github"></i> https://github.com/rashmiranjan210<br><br>
+                      <ul class="list-group list-group-flush " style="background: none;" >
+                        <li class="list-group-item" style="background: none;"> <p><i class="bi bi-envelope"> rashmibaral210@gmail.com</i></p></li>
+                        <li class="list-group-item" style="background: none;"> <p><i class="bi bi-phone"></i> +91 7735604064</p></li>
+                        <li class="list-group-item" style="background: none;"><p><i class="bi bi-linkedin"></i> https://www.linkedin.com/in/rashmiranjan-baral-48a70a219/</p></li>
+                        <li class="list-group-item" style="background: none;">  <p><i class="bi bi-github"></i> https://github.com/rashmiranjan210<br><br>
                         <a id="downloadLink" href="./MYRESUME.pdf" download>
-                          <button type="button" class="btn btn-sm" style="background-color: #ff9f1c; color:black " >Download CV</button>
+                          <button type="button" class="btn btn-sm" style="background-color: #ffab37; color:black " >Download CV</button>
                         </a></p>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div  class="col-6 d-none d-md-block"><img src="./me2.jpg" style="width:348px; border: 2px solid #ff9f1c; border-radius: 8px;  " alt=""></div>
+                  <div  class="col-6 d-none d-md-block"><img src="./me2.jpg" style="width:290px; border: 1px solid #000; border-radius: 8px; height:372px " alt=""></div>
               </div>
             </div>
 
-      <p class="text-center mt-5">@ 2023 Rashmiranjan Baral</p>
+          </section>
+          <div class="horizontalf" style="margin-top: 100px;"></div>
+          <footer>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+          </footer>
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <script src="./script.js"></script>
+   <script>
+    var typed = new Typed('#element', {
+      strings: ['aspiring Web Developer.', ' Coder.', ' designer. '],
+      typeSpeed: 50,
+      backSpeed:50,
+      loop:true
+    });
+   
+  </script>
 </body>
 </html>
