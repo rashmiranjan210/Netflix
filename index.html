@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link  href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
     <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
-<body style=" background-color: #faedcd; z-index:1;">
-    <div >
+<body style=" background-color: #fefae0; z-index:1;">
 
-      <nav class="navbar navbar-expand-lg n">
+       <div style="max-height:100vh; width:100%;" id="page1" >
+        <div id="cursor"></div>
+      <nav class="navbar navbar-expand-lg n " >
         <div class="container-fluid">
           <a class="navbar-brand">Rashmiranjan Baral</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,151 +29,136 @@
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                <a class="nav-link active" aria-current="page" href="#page2">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+                <a class="nav-link active" aria-current="page" href="#page3">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#education">Academics</a>
+                <a class="nav-link active" aria-current="page" href="#page4">Academics</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact">contact</a>
+                <a class="nav-link active" aria-current="page" href="#page5">contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-        <div class="horizontal-line"></div>
-       
+      
+        <div class="horizontal" style="margin-bottom: 80px;"></div>
         <div class="container text-center"  id="home">
-            <div class="row ">
-                <p style="text-align: right;margin:0;" class="preFade fadeIn">
-                    <strong>✦ </strong>Status <i class="bi bi-arrow-right"></i><strong> Open to Work</strong>
-                </p>
-                <div class="horizontal"></div>
-                <div class="container text-center">
-                  <div class="row">
-                    <div class="col col-lg-6 col-md-6 my-auto mx-auto">
-                      <p style="font-size:3rem; " class="ms-1 my-auto mx-auto">Hello World,I'm Rashmi</p>
-                      <p class="ms-1 my-auto mx-auto" style="margin-bottom: 200px; font-size:2rem;">A <span id="element"></span></p>
-                    </div>
-                    <div class="col col-md-6 col-lg-6 mx-auto my-auto d-none d-sm-block ">
-                        <img src="./me.jpg" alt="" style="width: 100%; ">
-                  </div>
+          <div class="row ">
+              <p style="text-align: right;margin:0;" class="preFade fadeIn">
+                  <strong>✦ </strong>Status <i class="bi bi-arrow-right"></i><strong> Open to Work</strong>
+              </p>
+              <div class="horizontal"></div>
+              <div class="container text-center">
+                <div class="row text-center">
+                      <div class="col col-lg-6 col-md-6 col-sm-12 my-auto mx-auto">
+                        <p style="font-size:3rem; " class="ms-1 my-auto mx-auto hell">Hello World,I'm Rashmi</p>
+                        <p class="ms-1 my-auto mx-auto pb-5" style="font-size:2rem;">A <span id="element"></span></p>
+                      </div>
+                      <div class="col col-md-6 col-lg-6 col-sm-12 d-none d-sm-block ">
+                          <img src="./components/me.jpg" alt="" style="width: 100%; ">
+                      </div>
+                 </div>
                 </div>
-              
             </div>
-          </div>
+       </div>
+       <!-- </div> -->
           <div class="horizontal"></div>
-          <section id="skills" class="container px-4 py-5 mt-3">
-            <h2 class=" text-start" style="margin-top: 150px;">Technical Skills</h2>
-            <div>
-            <div class="container text-center ">
-                <div class="row align-items-start">
-                    <div class="horizontal" style="margin-bottom: 80px;"></div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
-                    <div class="card pik border-0 " style="background: none;">
-                        <div  class="card-body pik rounded-circle mx-auto" style="border: 1px solid black; height:100px;width:100px ">
-                        <p></p>HTML
-                        </div>
+
+                 <!-- Projects -->
+                 <div id="page3">
+                  <div class="container " id="project">
+                      <h1 class="page3h1">Projects I've Worked On</h1>
+                      <div class="row ">
+                          <div class="horizontal"></div>
+                          <div class="col-lg-6 col-md-6 col-sm-12 text-center pt-5">
+                              <div class="page3img mx-auto">
+                                  <img src="./components/Screenshot 2024-01-13 200933.png" alt="">
+                                  <video autoplay muted loop src="./components/beatresume.mp4"></video>
+                              </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12 text-center pt-2 pb-5 my-auto " >
+                            <strong>BEATVIBE </strong><br><br>
+                            <h6 style="text-align: justify;">This music streaming web app, lets you explore tunes that match your 
+                              mood. Admins can effortlessly update the music library for a fresh and 
+                              diverse selection</h6> 
+                              <strong>✦ </strong>Skills used <i class="bi bi-arrow-right"></i><strong>HTML, CSS, Bootstrap, 
+                                PHP, and MySQLi via XAMPP,</strong>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12 text-center pt-5 my-auto d-none d-md-block" >
+                            <strong>NETFLIX-clone</strong>
+                            <br><br>
+                              <strong>✦ </strong>Skills used <i class="bi bi-arrow-right"></i><strong>HTML, CSS, Bootstrap</strong>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12 text-center pt-5 my-auto pb-5" >
+                              <div class="page3img mx-auto">
+                                  <img src="./components/netflixfile.png" alt="">
+                                  <video autoplay muted loop src="./components/netflix.mp4"></video>
+                              </div>
+                          </div>
+                          <div class="col-sm-12 text-center my-auto d-lg-none d-sm-block d-md-none pb-5" >
+                            <strong>NETFLIX-clone</strong>
+                            <br><br>
+                              <strong>✦ </strong>Skills used <i class="bi bi-arrow-right"></i><strong>HTML, CSS, Bootstrap</strong>
+                          </div>
                       </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
-                    <div class="card border-0" style="background: none;">
-                        <div class="card-body pik rounded-circle mx-auto" style="border: 1px solid black; height:100px;width:100px ">
-                        <p></p>css
-                        </div>
-                      </div>
+              </div>
+              <div class="horizontal "></div>
+      
+          <!-- Skills -->
+          
+          <div id="page2" >
+            <div class="container pb-5" id="skill">
+              <h1 class="page2h1">Skills & Tools I Use</h1>
+                <div class="row ">
+                  <div id="yo" style="justify-content: center; display:flex;">
+                    <div id="hero1"></div>
+                  <div id="hero2"></div>
+                  <div id="hero4"></div>
+                  <div id="hero3"></div>
+                  </div> <div class="horizontal mb-5"></div>
+                  <div class=" col col-md-3 col-lg-3 col-sm-4 mb-5 ">
+                      <div class="skil">HTML</div>
+                    </div>
+                    <div class=" col col-md-3 col-lg-3 col-sm-4 mb-5 ">
+                      <div class="skil">CSS</div>
+                    </div>                    
+                    <div class=" col col-md-3 col-lg-3 col-sm-4 mb-5">
+                      <div class="skil">JavaScript</div>
+                    </div>                    
+                    <div class=" col col-md-3 col-lg-3 col-sm-4 mb-5">
+                      <div class="skil">bootstrap</div>
+                    </div>
+                  <div class=" col col-md-3 col-lg-3 col-sm-4 mb-5">
+                    <div class="skil">C</div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
-                    <div class="card border-0" style="background: none;">
-                        <div class="card-body pik rounded-circle mx-auto" style="border: 1px solid black;height:100px;width:100px ">
-                        <p></p>php
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
-                    <div class="card border-0" style="background: none;">
-                        <div class="card-body pik rounded-circle mx-auto " style="border: 1px solid black; height:100px;width:100px  ">
-                        <p></p>bootstrap
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
-                    <div class="card border-0" style="background: none;">
-                        <div class="card-body pik rounded-circle mx-auto" style="border: 1px solid black; height:100px;width:100px  ">
-                        <p></p>java
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
-                    <div class="card border-0" style="background: none;">
-                        <div class="card-body pik rounded-circle mx-auto " style="border: 1px solid black; height:100px;width:100px ">
-                        <p></p>JavaScript
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5 ">
-                    <div class="card border-0" style="background: none;">
-                        <div class="card-body pik rounded-circle mx-auto " style="border: 1px solid black; height:100px;width:100px ">
-                       <p></p> C
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mt-5 ">
-                    <div class="card border-0" style="background: none;">
-                        <div class="card-body pik rounded-circle mx-auto " style="border: 1px solid black; height:100px;width:100px ">
-                       <p></p> Python
-                        </div>
-                      </div>
+                  <div class=" col col-md-3 col-lg-3 col-sm-4 mb-5">
+                    <div class="skil">php</div>
+                  </div>                    
+                  <div class=" col col-md-3 col-lg-3 col-sm-4 mb-5">
+                    <div class="skil">Java</div>
+                  </div>                    
+                  <div class=" col col-md-3 col-lg-3 col-sm-4 mb-5">
+                    <div class="skil">python</div>
                   </div>
                 </div>
-              </div>
+                <!-- Add more rows as needed -->
             </div>
-          </section>
-          <div class="horizontalf"></div>
-          <!-- Projects -->
-          <section id="projects" class="container px-4 py-5 mt-3">
-            <h2 class=" text-start" style="margin-top: 150px;">Projects</h2>
-                    <div class="row gy-4">
-                        <div class="horizontal" style="margin-bottom: 70px; "></div>
-                        <div style="display: flex; justify-content: space-between; ">
-                            <div class="card border-0" style="width: 7rem;background:none;">
-                            <img src="./song.png" class="card-img-top" alt="..." style="width:100%;padding-top:40px;">
-                            </div>
-                            <div style="padding-top: 50px; font-size:20px; ">
-                            <a href="https://github.com/rashmiranjan210/BeatVibe" style="text-decoration: none; color:#000">Beatvibe</a>
-                            </div>
-                            <div style="padding-top: 50px; font-size:20px">
-                              <a id="downloadLink" href="./BeatVibe_merged_compressed.pdf" download style="text-decoration: none; color:#000">Screenshot</a>
-                            </div>
-                        </div>
-                        <div class="horizontal" style="margin-top: 0;"></div>
-                        <div  style="display: flex; justify-content: space-between; ">
-                          <div class="card border-0" style="width: 7rem;background:none;">
-                            <img src="./netflix.webp" class="card-img-top" alt="..." style="width:100%; padding-top:30px;">
-                          </div>
-                          <div style="padding-top: 50px; font-size:20px; ">
-                          Netflix
-                          </div>
-                          <div style="padding-top: 50px; font-size:20px">
-                            <a id="downloadLink" href="./Screenshot 2024-01-04 004612.pdf" download style="text-decoration: none; color:#000">Screenshot</a>
-                          </div>
-                      </div>
-                      </div>
-                        <div class="horizontal" style="margin-bottom: 100px;"></div>
-                    </div>
-                </header>
-            </div>
-          </section>
-          <div class="horizontalf" style="margin-top: 150px;"></div>
+        </div>
+        <div class="horizontal"></div>
+        
+         
           <!-- education -->
-          <section id="education" class="resume section-bg">
-            <div class="container" data-aos="fade-up">
+          <div style="max-height: 100vh; width:100%; " id="page4">
+          <section id="education" class="resume section-bg" style="height: 100%;">
+            <div class="container" >
               <header class="section-header">
-                <h2 class="section-title">Education</h2>
-                <div class="horizontal" style="margin-bottom: 70px;"></div>
+                <h2 class="section-title"style="padding-top:100px;">Education</h2>
+                <div class="horizontal" style="padding-bottom: 50px;"></div>
                 <div class="row">
                   <div class="col-lg-6 col-md-6 mb-5">
                     <div class="card " style="background:none; border:1px solid ">
@@ -213,13 +204,14 @@
               </header>
             </div>
           </section>
-          <div class="horizontalf" style="margin-top: 100px;"></div>
+        </div>
+          <div class="horizontal"></div> 
           <!-- contact -->
-          <section id="contact" class="contact">
-            <div id="contact" class="container mt-5">
+           <section class="contact" style="max-height: 100vh;" id="page5">
+            <div class="container pb-5" >
               <div class="row ">
-                <h2 class="section-title">Contact</h2>
-                <div class="horizontal" style="margin-bottom: 70px;"></div>
+                <h2 class="section-title" style="padding-top: 100px;">Contact</h2>
+                <div class="horizontal" style="padding-bottom: 70px;"></div>
                   <div class="col-md-6 ">
                     <div class="card mx-auto text-center float-md-end" style="width: 18rem; border: 1px solid #000; background: none; ">
                       <div class="card-header">
@@ -228,26 +220,28 @@
                       <ul class="list-group list-group-flush " style="background: none;" >
                         <li class="list-group-item" style="background: none;"> <p><i class="bi bi-envelope"> rashmibaral210@gmail.com</i></p></li>
                         <li class="list-group-item" style="background: none;"> <p><i class="bi bi-phone"></i> +91 7735604064</p></li>
-                        <li class="list-group-item" style="background: none;"><p><i class="bi bi-linkedin"></i> https://www.linkedin.com/in/rashmiranjan-baral-48a70a219/</p></li>
-                        <li class="list-group-item" style="background: none;">  <p><i class="bi bi-github"></i> https://github.com/rashmiranjan210<br><br>
-                        <a id="downloadLink" href="./resume.pdf" download>
+                        <li class="list-group-item" style="background: none;"><p><a href="https://www.linkedin.com/in/rashmiranjan-baral-48a70a219/"><i class="bi bi-linkedin"></i></a> https://www.linkedin.com/in/rashmiranjan-baral-48a70a219/</p></li>
+                        <li class="list-group-item" style="background: none;"> <a href=" https://github.com/rashmiranjan210"> <i class="bi bi-github"></i></a> <p> https://github.com/rashmiranjan210<br><br>
+                        <a id="downloadLink" href="./components/resume.pdf" download>
                           <button type="button" class="btn btn-sm" style="background-color: #ffab37; color:black " >Download CV</button>
                         </a></p>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div  class="col-6 d-none d-md-block"><img src="./me2.jpg" style="width:290px; border: 1px solid #000; border-radius: 8px; height:372px " alt=""></div>
+                  <div  class="col-6 d-none d-md-block"><img src="./components/me2.jpg" style="width:290px; border: 1px solid #000; border-radius: 8px; height:380px " alt=""></div>
               </div>
             </div>
 
           </section>
-          <div class="horizontalf" style="margin-top: 100px;"></div>
+          <!-- <div class="horizontalf" style="margin-top: 100px;"></div> -->
           <footer>
 
           </footer>
-
-    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
    <script src="./script.js"></script>

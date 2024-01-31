@@ -15,12 +15,33 @@
     text-align: center;
 
 }
-.horizontal-line {
-    border-top: 1px solid #000;
-    margin-bottom: 100px;
+.nav-item {
+    padding: 1px 10px;
+    border: 1px solid black;
+    margin: 1px 5px;
+    border-radius: 50px; position: relative;
+    overflow: hidden;
+
+}
+.nav-item::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.4s;
+}
+.nav-item:hover::after{
+    bottom: 0;
+}
+.nav-item a{
+ z-index: 9;
+ position: relative;
 }
 .horizontal {
-    border-top: 1px solid #000;
+    border-top: 1px solid #000
 }
 .text1{
     font-size: 3rem;
@@ -32,7 +53,105 @@
     padding: 0;
 }
 
+#hero1{
+    height:40vh;
+    width: 40vh;
+    border-radius: 50%;
+    filter:blur(90px);
+    position: absolute;
+    background-color: #413c3c;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    z-index: -5;
+    animation: anime2 3s linear infinite alternate;
 
+}
+#hero2{
+    height:40vh;
+    width: 40vh;
+    border-radius: 50%;
+    filter:blur(40px);
+    position: absolute;
+    background-color: #413c3c;
+    animation: anime 3s linear infinite alternate;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    z-index: -5;
+}
+#hero3{
+    height:40vh;
+    width: 40vh;
+    border-radius: 50%;
+    filter:blur(40px);
+    position: absolute;
+    background-color: #413c3c;
+    animation: anime1 3s linear infinite alternate;
+    object-fit: cover;
+    z-index: -5;
+}
+#hero4{
+    height:40vh;
+    width: 40vh;
+    border-radius: 50%;
+    filter:blur(90px); 
+    position: absolute;
+    background-color:#413c3c;
+    animation: anime4 3s linear infinite alternate;
+    object-fit: cover;
+    z-index: -5;
+}
+@keyframes anime {
+    form{
+        transform: translate(-50%,-50%);
+    }
+    to{
+        transform: translate(30%,30%);
+    }
+    
+}
+@keyframes anime1 {
+    form{
+        transform: translate(50%,-50%);
+    }
+    to{
+        transform: translate(-30%,30%);
+    }
+    
+}
+@keyframes anime2 {
+    form{
+        transform: translate(50%,-50%);
+    }
+    to{
+        transform: translate(-0%,-10%);
+    }
+    
+}
+@keyframes anime4 {
+    form{
+        transform: translate(20%,50%);
+    }
+    to{
+        transform: translate(-10%,-10%);
+    }
+    
+}
+#cursor{
+    height: 20vw;
+    width: 20vw;
+    background-color:#64615e;
+    position: absolute;
+    position: fixed;
+    border-radius: 50%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    filter:blur(40px)
+}
 .horizontalb {
     border-top: 1px solid #000;
     width: 100%;
@@ -80,5 +199,98 @@
     .col-lg-6 p.ms-1 {
         margin-bottom: 100px; 
         font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 483px) {
+    .hi {
+        font-size: 2rem;
+        padding-top: 200px; 
+    }
+}
+
+/* page2 */
+
+#page2{
+    max-height: 100vh; 
+    width:100%; 
+}
+.page2h1{
+    padding-top: 150px;
+}
+#skill {
+   
+    overflow: hidden;
+}
+
+.skil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+/* page3 */
+#page3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.page3img {
+    height: 60vh;
+    width: 40vh;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 30px;
+}
+
+.page3img img,
+.page3img video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 27px;
+    transition: all 0.9s ease;
+    
+}
+/* .page3img video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute
+    border-radius: 20px;
+    transition: all 0.5ms ease;
+} */
+
+.page3img video {
+    opacity: 0;
+}
+
+.page3img:hover img {
+    opacity: 0;
+}
+
+.page3img:hover video {
+    opacity: 1;
+}
+.page3h1{
+    padding-top: 120px;
+    
+}
+@media only screen and (max-width: 483px) {
+    .hell {
+        font-size: 2rem;
+        padding-top: 100px; 
     }
 }
