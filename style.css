@@ -245,13 +245,15 @@
 
 .page3img {
     height: 60vh;
-    width: 40vh;
+    width: 100%;
+    max-width: 100%;
     border: 3px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     border-radius: 30px;
+    overflow: hidden; /* Ensure the content stays within the border radius */
 }
 
 .page3img img,
@@ -262,8 +264,20 @@
     position: absolute;
     border-radius: 27px;
     transition: all 0.9s ease;
-    
 }
+
+@media (max-width: 768px) {
+    .page3img {
+        height: 40vh; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .page3img {
+        height: 30vh; /* Further adjust height for very small screens */
+    }
+}
+
 /* .page3img video {
     object-fit: cover;
     height: 100%;
